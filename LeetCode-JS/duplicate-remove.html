@@ -10,16 +10,15 @@
     nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]; //Array input
 
     var removeDuplciates = function (nums) {
-        let index = 0;
+        let index = 1;
         for (var i = 1; i < nums.length; i++) {
-            if (nums[i] === nums[i - 1]) {
-                nums[index] = nums[i];
+            if (nums[i] !== nums[i - 1]) {
+                nums[index] = nums[i]; //Use value index new position
                 index++;
             } 
         }
         return index;
     };
-
     k = removeDuplciates(nums);
     console.log(k);
   </script>
