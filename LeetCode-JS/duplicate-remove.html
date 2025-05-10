@@ -9,7 +9,7 @@
   <script>
     nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]; //Array input
 
-    var removeDuplciates = function (nums) {
+    var removeDuplicates = function (nums) {
         let index = 1;
         for (var i = 1; i < nums.length; i++) {
             if (nums[i] !== nums[i - 1]) {
@@ -19,7 +19,7 @@
         }
         return index;
     };
-    k = removeDuplciates(nums);
+    k = removeDuplicates(nums);
     console.log(k);
   </script>
 </html>
